@@ -573,11 +573,12 @@ pre code {
   .container {
     max-width: 720px;
   }
+}
 
-@media (max-width:768px) {
-	.navbar-brand {
-		display: contents;
-	}
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: contents !important;
+  }
 }
 
 @media (min-width: 992px) {
