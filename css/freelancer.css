@@ -573,6 +573,9 @@ pre code {
   .container {
     max-width: 720px;
   }
+	.navbar-brand {
+		display: contents;
+	}
 }
 
 @media (min-width: 992px) {
