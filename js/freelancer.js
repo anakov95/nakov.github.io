@@ -59,5 +59,8 @@
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
-
+  $("#testbutton").onclick = function() {
+    alert("Thank you for reaching out!")
+    $("#contactform").submit();
+  }
 })(jQuery); // End of use strict
