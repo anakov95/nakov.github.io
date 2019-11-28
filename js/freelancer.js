@@ -30,6 +30,17 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // Closes modal and takes you to contact form when you click the Book Shooting button
+  $('#bookshooting').click(function() {
+    $('#portfolioModal2').hide();
+    $('.modal-backdrop').hide();
+  });
+
+  // Alerts Thank you for submiting the form
+  $('#sendform').click(function() {
+    alert('Thank you for reaching out');
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -59,8 +70,4 @@
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
-  $("#testbutton").onclick = function() {
-    alert("Thank you for reaching out!")
-    $("#contactform").submit();
-  }
 })(jQuery); // End of use strict
