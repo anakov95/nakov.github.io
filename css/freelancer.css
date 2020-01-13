@@ -10880,3 +10880,17 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+#switch {
+  border-radius: 50px;
+  position: fixed;
+  display: contents;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #343a40 !important;
+    color: white;
+    text-secondary: #b9cbd9 !important;
+  }
+}
