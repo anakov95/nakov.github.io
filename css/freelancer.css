@@ -10882,14 +10882,14 @@ form .row:first-child .floating-label-form-group {
 }
 
 .galimg {
-  max-height: 500px;
-  max-width: 500px;
-  max-block-size:500px;
+  max-height: 25rem;
+  max-width: 100%;
 }
 
 .darkmode--activated {
   mix-blend-mode: multiply;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
