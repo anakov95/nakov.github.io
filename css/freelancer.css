@@ -10887,26 +10887,6 @@ form .row:first-child .floating-label-form-group {
   max-block-size:500px;
 }
 
-.darkmode--activated {
-  mix-blend-mode: multiply;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #456;
-    --secondary: #999;
-    --success: #0FF;
-    --info: #F0F;
-    --warning: #FF0;
-    --danger: #F00;
-    --light: #f8f9fa;
-    --dark: #343a40;
-  }
-}
-
-<<<<<<< HEAD
-#switch {
-  border-radius: 50px;
-  position: fixed;
-  display: contents;
+.bg-primary, footer {
+  isolation: isolate;
 }
