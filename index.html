@@ -31,10 +31,7 @@
 
 <body id="page-top">
   <!-- Dark Mode Script -->
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.4/lib/darkmode-js.js"></script>
-  <script>
-    new Darkmode().showWidget();
-  </script>
+  <script src="js/darkmode-js.min.js"></script>
 
 
   <!-- Navigation -->
@@ -56,10 +53,16 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
+          <li>
+            <button id="switch-btn" class="btn btn-secondary btn-large d-lg position-fixed" style="border-radius: 50px;">
+              <i class="fas fa-lightbulb"></i>
+            </button>
+        </li>
         </ul>
       </div>
     </div>
   </nav>
+
 
   <!-- Masthead -->
   <header class="masthead bg-primary text-white text-center">
@@ -84,12 +87,6 @@
     </div>
   </header>
 
-  <!-- Detached -->
-  <!-- <div id="switch d-lg-none position-fixed" class="fixed-action-btn" data-toggle="tooltip" data-placement="top" title="Turn off the lights">
-    <button id="switch-btn" class="btn btn-secondary btn-large scroll-to-top d-lg position-fixed" style="border-radius: 50px;">
-      <i class="fas fa-lightbulb"></i>
-    </button>
-  </div> -->
 
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
@@ -119,7 +116,7 @@
                 <p> Angelina Photography
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/angelina.jpg" alt="Angelina Photography" srcset="img/angelinafront.svg">
+            <img class="img-fluid" src="img/portfolio/angelina.jpg" alt="Angelina Photography"">
           </div>
         </div>
 
