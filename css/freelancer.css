@@ -2049,7 +2049,16 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  /* background-color: #fff; */
+  border-color: #6bebd1;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+
+.darkmode-layer .form-control:focus {
+  color: #ff0;
+  background-color: #ff0;
   border-color: #6bebd1;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
@@ -10882,31 +10891,15 @@ form .row:first-child .floating-label-form-group {
 }
 
 .galimg {
-  max-height: 25rem;
-  max-width: 100%;
+  max-height: 500px;
+  max-width: 500px;
+  max-block-size:500px;
 }
 
-.darkmode--activated {
-  mix-blend-mode: multiply;
+.bg-primary, footer {
+  isolation: isolate;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #456;
-    --secondary: #999;
-    --success: #0FF;
-    --info: #F0F;
-    --warning: #FF0;
-    --danger: #F00;
-    --light: #f8f9fa;
-    --dark: #343a40;
-  }
-}
-
-<<<<<<< HEAD
-#switch {
-  border-radius: 50px;
-  position: fixed;
-  display: contents;
+darkmode-layer {
+  background-color: #fff;
 }

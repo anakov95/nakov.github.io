@@ -46,6 +46,13 @@
     offset: 80
   });
 
+  // Toggle dark Mode
+  let darkmode = new Darkmode();
+
+  $("#switch-btn").click(function() {
+    darkmode.toggle();
+  });
+
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
