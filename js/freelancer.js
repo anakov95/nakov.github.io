@@ -32,8 +32,7 @@
 
   // Closes modal and takes you to contact form when you click the Book Shooting button
   $('#bookshooting').click(function() {
-    $('#portfolioModal2').hide();
-    $('.modal-backdrop').hide();
+    $('#portfolioModal2').modal('toggle');
   });
 
   // Alerts Thank you for submiting the form
